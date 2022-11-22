@@ -217,6 +217,9 @@ class PrepareParisDataLibray:
         paris_library_df = self.paris_library_df
 
 
+        paris_library_df.drop_duplicates(subset=['N° de notice'],inplace=True)
+
+
         library = paris_library_df[libraries]
 
 
